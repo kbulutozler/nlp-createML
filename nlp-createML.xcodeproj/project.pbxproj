@@ -3,13 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
+
+/* Begin PBXFileReference section */
+		948BB1AD26E026CA001DD65B /* MLTextClassifier.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MLTextClassifier.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		948BB1AE26E027D6001DD65B /* MLWordTagger.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MLWordTagger.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+/* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		948BB1A626E02628001DD65B = {
 			isa = PBXGroup;
 			children = (
+				948BB1AE26E027D6001DD65B /* MLWordTagger.playground */,
+				948BB1AD26E026CA001DD65B /* MLTextClassifier.playground */,
 			);
 			sourceTree = "<group>";
 		};
@@ -22,7 +29,7 @@
 				LastUpgradeCheck = 1250;
 			};
 			buildConfigurationList = 948BB1AA26E02628001DD65B /* Build configuration list for PBXProject "nlp-createML" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
