@@ -8,7 +8,7 @@ The data can be found [here](https://ai.stanford.edu/~amaas/data/sentiment/ "Nam
 * If you do, use the notebook *MLTextClassifier_preprocessing.ipynb* to extract the training and testing datasets in the json format. 
 Change the dataset path to where you put *aclImdb* folder. 
 * The notebook will create 2 files: training.json, testing.json. Go to xcode and add these files to Resources folder of the project. 
-* In the xcode, you can train the default model which is maximum entropy, or transfer learning method. The results I got is in the table:
+* In the xcode, you can train the default model which is maximum entropy, or transfer learning method. The results I got are in the table:
 
 Model  | Accuracy Percentage
 ------------- | -------------
@@ -29,12 +29,14 @@ Change the dataset path to where you put *en_train.csv* and *pos_tags.csv* files
 * The notebook will create several files with different sizes since the original dataset is pretty large and slow to process. 
 Since the original dataset has both unnormalized and normalized tokens, the notebook creates training and testing files for each.
 Choose the files you want to use, go to xcode and add these files to Resources folder of the project. 
-* In the xcode, you can train the default model which is crf, or transfer learning method. The results I got is in the table:
+* In the xcode, you can train the default model which is crf, or transfer learning method. The results I got are in the table:
 
 Model |  Training (Size)  |  Testing (Size)  | Accuracy Percentage
 ------------- | -------------  | -------------  | -------------
 crf  |  normalized (6k)  |  normalized (3k)  |  94.43  
 crf  |  normalized (6k)  |  unnormalized (3k)  |  90.89 
+crf  |  unnormalized (6k)  |  normalized (3k)  |  76.33   
+crf  |  unnormalized (6k)  |  unnormalized (3k)  |  93.78  
 
 
 
