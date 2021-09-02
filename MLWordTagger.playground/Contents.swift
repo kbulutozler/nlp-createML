@@ -3,10 +3,10 @@ import Foundation
 
 
 // Load training and testing data from resources directory
-let trainingDataPath = Bundle.main.path(forResource: "normalized_train", ofType: "json", inDirectory: "Data")!
+let trainingDataPath = Bundle.main.path(forResource: "unnormalized_train_6k", ofType: "json", inDirectory: "Data")!
 let trainingData = try MLDataTable(contentsOf: URL(fileURLWithPath: trainingDataPath))
 
-let testingDataPath = Bundle.main.path(forResource: "normalized_test", ofType: "json", inDirectory: "Data")!
+let testingDataPath = Bundle.main.path(forResource: "unnormalized_test_3k", ofType: "json", inDirectory: "Data")!
 let testingData = try MLDataTable(contentsOf: URL(fileURLWithPath: testingDataPath))
 
 /*
