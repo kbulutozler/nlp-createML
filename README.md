@@ -10,11 +10,11 @@ Change the dataset path to where you put *aclImdb* folder.
 * The notebook will create 2 files: training.json, testing.json. Go to xcode and add these files to Resources folder of the project. 
 * In the xcode, you can train the default model which is maximum entropy, or transfer learning method. The results I got is in the table:
 
-Model  | Accuracy
+Model  | Accuracy Percentage
 ------------- | -------------
-Original Best*  | %88.89
-maxEnt  |  %87.52 
-transferLearning  |  %74.45 
+Original Best*  | 88.89
+maxEnt  |  87.52 
+transferLearning  |  74.45 
 
 * Best result in the [paper](https://ai.stanford.edu/~amaas/papers/wvSent_acl2011.pdf "Named link title") under the column *Our Dataset*.
 
@@ -31,10 +31,10 @@ Since the original dataset has both unnormalized and normalized tokens, the note
 Choose the files you want to use, go to xcode and add these files to Resources folder of the project. 
 * In the xcode, you can train the default model which is crf, or transfer learning method. The results I got is in the table:
 
-Model |  Training (Size)  |  Testing (Size)  | Accuracy
+Model |  Training (Size)  |  Testing (Size)  | Accuracy Percentage
 ------------- | -------------  | -------------  | -------------
-crf  |  normalized (12k)  |  normalized (3k)  |  -  
-transferLearning  |  normalized (12k)  |  normalized (3k)  |  - 
+crf  |  normalized (6k)  |  normalized (3k)  |  94.43  
+crf  |  normalized (6k)  |  unnormalized (3k)  |  90.89 
 
 
 
